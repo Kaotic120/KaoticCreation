@@ -1,77 +1,71 @@
-<!Doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Keith A. Jones</title>
-   <Link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy__bKDaqe9o86iVOmpuTBRMQtFFQuHGk-cMh3yE9v0g&usqp=CAU&ec=48600113">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css"/>
+
+    <title>Home</title>
 </head>
-<Body style="color:black; background-Color:lightblue;">
+<body>
+    <header>
+        <div>
+            <div class="navbar">
+                <div class="logo"><a href="#">Kaotic Creations</div>
+                <ul class="links">
 
-<h1 style="color:Black; background-Color:yellow;">Kaotic Creations</h1>
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="Projects">Projects</a></li>
+                    <li><a href="ontact">Contact</a></li>
 
-email: <a href="mailto:Kaotic@KaoticCreation.com">Kaotic@KaoticCreation.com</a>
-<br>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown_menu open">
+                <li><a href="hero">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="Projects">Projects</a></li>
+                    <li><a href="ontact">Contact</a></li>
+                    <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
 
-website: <a href="https://kaoticcreation.com">KaoticCreation.com</a>
-<hr>
+            <h1>Welcome</h1>
+            <br>            
+            <p>
+                 If you build it they will come.......
+            <br>
 
-<h2><ins>Journey within the Kaos</ins></h2>
+                 Lets create something great!!!
+            </p>    
+            
+        </section>
+    </main>
+    <script>
+        const toggle_btn = document.queryslector('.toggle_btn')
+        const toggle_btnIcon = document.queryslector('.toggle_btn i')
+        const dropdownMenu = document.queryslector('.dropdownMenu')
+        
+        toggle_btn.onclick = function ()
+        
+        {
+            dropdownMenu.classlist.toggle('open')
+            const isopen = dropdownMenu.classlist.contains('open')
 
-	<a href="F:\Coding\HTML\login2.html">Login</a>
-
-
-<br>
-<h3>
-
-<p>In the Beginning there was<em>"Kaos"</em> infinite possibilities</p>
-<p>formatted as forces of vibration, and within this Kaos a </p>
-<p>spark emerged. </p>
-
-<p>All formations from this spark were cloaked</p>
-<p>with the duality of balance know as <em>"Opposing forces"</em>.</p>
-<p>Opposing forces are the key component required </p>
-<p>to keep stability within Kaos, because</p>
-<p>without opposing forces Kaos becomes Kaotic.</p>
-
-<p>Kaotic, the inevitable charge of Kaos which illustrates</p>
-<p>the immaculate wonders that exist within Kaos!!!!</p>
-
-
-
-<h2>
-<br>
-<em>Not all Kaos is bad!!!!<em>
-<h3>
-<br>
-
-<p>                        Try!!!<p>
-<p>The Worst thing thing that can happen is nothing happens.<p>
-<p>                  But Nothing's happening anyway!!!<p>
-
-<br>
-<br>
-
-<!-- Commented out Table Data
-<table>
-    <tr>
-	<th>Name</th>
-	<th>email</th>
-	<th>Phone</th>
-    </tr>
-
-    <tr>
-	<td>Keith</td>
-	<td>Keith@email</td>
-	<td>8434530532</td>
-    </tr>
-
-
-    <tr>
-    </tr>
-
-</Table>
--->
-
-<img src="https://www.daac.in/blog/wp-content/uploads/2022/03/Future-of-Web-Designing.jpg">
+            toggle_btnIcon.classlist=isopen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
 </body>
-</Html>
+</html>
