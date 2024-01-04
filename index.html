@@ -3,69 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css"/>
-
-    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Kaotic Creations</title>
 </head>
-<body>
-    <header>
-        <div>
-            <div class="navbar">
-                <div class="logo"><a href="#">Kaotic Creations</div>
-                <ul class="links">
+    <body>
 
-                    <li><a href="https://kaoticcreations.tech/">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="Projects">Projects</a></li>
-                    <li><a href="Contact">Contact</a></li>
+        <div class="kaos">
+            <div class="wrapper">
+                <h4>MENU</h4>
+                <div class="menu">
+                <span><a href="index.html">Home</span></a><br>
+                <br>
 
-                </ul>
-                <a href="https://kaoticcreation.com" class="action_btn">Get Started</a>
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
+                <span><a href=""> Contact us</span></a><br><br>
+                <span><a href="">About us </span></a><br><br>
+                <span><a href=""> Contact us</span></a>
+                </div>
+              
+            </div>
+                
+            <div class="homeTop">
+                <h4>Kaotic<span>Creations</span></h4>
+               <h3>Infinite possibilities</h3>
+    
+            </div>
+    
+            <div class="elevatingBrand">     
+                <img class="elevatingBrandPic"src="https://www.ancient-origins.net/sites/default/files/field/image/Chaos.jpg">
+               
+                <P class="txtElevate">Elevate your<Span> Brand </Span>beyond your competitors...<br>
+                    Kaotic Creations provides a unique approach to web designs
+                    and that approach is the you in your webpage.<br><br>
+    
+                    <span2>You will not be given a collection of templates
+                        to choose from. We want to hear your  ideas, and discuss 
+                        the best method for promoting your <Span> Brand </Span>.
+                    </span2>                      
+                    <br>
+                    <br>                       
+                    
+                    <a Class="btn_learnMoreBrand" href="LearnMore.html">Learn More</a>
+                </p>   
+            </div> 
+
+
+            <div class="container">
+                
+                <div class="wrap">
+                    <div class="card">
+                        <img class="website" src="https://images.ctfassets.net/freurdme1ae3/2HCYLUixcXQ9kKNo3P6TYL/410c2da5e5ce204f2ff32e965a9187db/Website-Design-new.jpeg?w=2048&h=1152&q=80&fit=fill&f=face">
+                        <div class="card_descript">
+                            <h4>Web sites</h4>
+                            <a href="website.html"class="btn_toc">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <img class="website" src="https://i.ytimg.com/vi/pyD3KEBK9tg/sddefault.jpg">
+                        <div class="card_descript">
+                            <h4>Data Management</h4>
+                            <a href="website.html"class="btn_toc">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <img class="website" src="https://www.concettolabs.com/blog/wp-content/uploads/2017/08/desktop-app-development.png">
+                        <div class="card_descript">
+                            <h4>Desktop Applications</h4>
+                            <a href="website.html"class="btn_toc">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <img class="website" src="images/DataBase1.jpg">
+                        <div class="card_descript">
+                            <h4>Web sites</h4>
+                            <a href="website.html"class="btn_toc">View More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="dropdown_menu open">
-                <li><a href="hero">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="Projects">Projects</a></li>
-                    <li><a href="Contact">Contact</a></li>
-                    <li><a href="https://kaoticcreation.com" class="action_btn">Get Started</a></li>
+
+         
+            <div class="getNameOut">
+                <h3>Expand your Market</h3> 
+
+                
             </div>
+    
+            <div class="timeIsNow">
+                <h3>The Time Is Now</h3>
+    
+            </div>
+
         </div>
-    </header>
-    <main>
-        <section id="hero">
 
-            <h1>Welcome</h1>
-              
-            <p>
-                 If you build it they will come.......
-            <br>
-
-                 Lets create something great!!!
-            </p>    
-            
-        </section>
-    </main>
-    <script>
-        const toggle_btn = document.queryslector('.toggle_btn')
-        const toggle_btnIcon = document.queryslector('.toggle_btn i')
-        const dropdownMenu = document.queryslector('.dropdownMenu')
-        
-        toggle_btn.onclick = function ()
-        
-        {
-            dropdownMenu.classlist.toggle('open')
-            const isopen = dropdownMenu.classlist.contains('open')
-
-            toggle_btnIcon.classlist=isopen
-            ?'fa-solid fa-xmark'
-            :'fa-solid fa-bars'
-        }
-    </script>
-</body>
+    </body>
 </html>
